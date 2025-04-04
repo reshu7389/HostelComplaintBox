@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hostel Complaint Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+    <header class="main-header">
+        <h1>Complaint Dashboard</h1>
+    </header>
+    <div class="dashboard-container">
+        <!-- Home Link -->
+        <nav class="home-link">
+            <a href="home.html">Home</a>
+        </nav>
+        <nav class="logout-link">
+            <a href="index.html">Logout</a>
+        </nav>
+
+        <!-- Statistics Section -->
+        <section class="statistics-section">
+            <div class="stat-card" id="open-complaints-card">
+                <h2 id="complaints-title">Open Complaints</h2>
+
+                <p id="open-complaints"></p>
+            </div> 
+            <div class="stat-card">
+                <h3>Total Complaints</h3>
+                <p id="total-complaints"></p>
+            </div>
+            <div class="stat-card">
+                <h3>Resolved Complaints</h3>
+                <p id="resolved-complaints"></p>
+            </div>
+        </section>
+
+        <!-- Open Complaints Section -->
+        <section class="complaints-table" id="open-complaints-section">
+            <h2>Open Complaints</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Room Number</th>
+                        <th>Issue</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody id="complaints-list">
+                    <!-- This will be dynamically populated -->
+                </tbody>
+            </table>
+        </section>
+    </div>
+    <script src="dashboard.js"></script>
+</body>
+</html>
